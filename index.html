@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>GodSky提醒您：网站正在升级中！</title>
+    <style type="text/css">
+        /*==== RESET ====*/
+        body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,p,pre,code,form,fieldset,legend,blockquote,th,td,figure{margin:0;padding:0;}
+        li{list-style:none;}
+
+        html{-webkit-text-size-adjust:none;-ms-text-size-adjust:none;}
+        body{font:75%/1.5 Arial,Sans-serif;}
+        h1,h2,h3,h4,h5,h6{font-size:100%;}
+
+        .clearfix{zoom:1;}
+        .clearfix:after{content:".";display:block;height:0;clear:both;overflow:hidden;visibility:hidden;}
+
+        a:link,a:visited{color:#06c;text-decoration:none;}
+        a:hover,a:active{text-decoration:underline;}
+
+        body{background:#F9FAFD;color:#818181;}
+        .box{width:624px;height:188px;padding:32px 30px 0 184px;background:url(maintenance.png) no-repeat 0 0;position:absolute;margin:-144px 0 0 -419px;top:50%;left:50%;font-size:14px;line-height:24px;}
+        .box .title{margin-bottom:2px;}
+        .box .text{padding-left:29px;}
+        p span {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<script>var ua = navigator.userAgent.toLowerCase();
+var isWeixin = ua.indexOf('micromessenger') != -1;
+var isAndroid = ua.indexOf('android') != -1;
+var isIos = (ua.indexOf('iphone') != -1) || (ua.indexOf('ipad') != -1);
+if (isWeixin || isAndroid || isIos) {
+    location.href = 'm.html';
+}</script>
+<div class="box">
+    <div class="title">Dear friends：</div>
+    <div class="title">亲爱的盆友们：</div>
+    <div class="text">
+        為了給各位網友提供更好的服務，GodSky正在進行升級，倒計時：<span id="timesp"></span>分钟后恢復訪問，感謝您的等待。<br />
+        In order to provide users with better service, GodSky is upgrading, countdown: <span id="etimesp"></span> minutes after the resumption of visits, thank you for your waiting.
+    </div>
+</div>
+<script src="js.js"></script>
+<script type="text/javascript">
+
+
+</script>
+</body>
+</html>
